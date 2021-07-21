@@ -1,6 +1,6 @@
 import React from "react";
 import { AppBar as MuiAppBar, Box, Toolbar } from "@material-ui/core";
-import companyLogo from "../../_assets/img/logo.svg";
+import companyLogo from "_assets/img/logo.svg";
 
 import { useStyles } from "./AppBar.style";
 

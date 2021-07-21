@@ -1,7 +1,7 @@
 import { Box, CssBaseline, MuiThemeProvider } from '@material-ui/core';
-import { theme } from '../../_config/theme';
+import { theme } from '_config/theme';
 import { useStyle } from './App.style';
-import "../../_assets/css/forms/mainform.scss"
+import "_assets/css/forms/mainform.scss"
 
 import { Router } from '../Router';
 

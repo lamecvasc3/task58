@@ -2,8 +2,8 @@ import React from "react";
 import { useHistory } from "react-router";
 import { Box } from "@material-ui/core";
 import { KeyboardArrowLeft } from "@material-ui/icons";
-import { Button } from "../../components/Button";
-import { returnLabel } from "../../constants/buttons/labels";
+import { Button } from "components/Button";
+import { returnLabel } from "constants/buttons/labels";
 import { useStyles } from "./ProcessPageFooter.style";
 
 interface ProcessPageFooterProps {

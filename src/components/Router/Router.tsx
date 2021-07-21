@@ -1,9 +1,9 @@
-import { CurrentPassword } from "../../features/personalInformation/pages/ChangePassword/CurrentPassword";
-import { NewPassword } from "../../features/personalInformation/pages/ChangePassword/NewPassword";
-import { ConfirmNewPassword } from "../../features/personalInformation/pages/ChangePassword/ConfirmNewPassword";
+import { CurrentPassword } from "features/personalInformation/pages/ChangePassword/CurrentPassword";
+import { NewPassword } from "features/personalInformation/pages/ChangePassword/NewPassword";
+import { ConfirmNewPassword } from "features/personalInformation/pages/ChangePassword/ConfirmNewPassword";
 import React from "react";
 import { BrowserRouter, Route, Switch} from "react-router-dom";
-import { PersonalInformationRoutes } from "../../features/personalInformation/constants/routes"
+import { PersonalInformationRoutes } from "features/personalInformation/constants/routes"
 
 export const Router: React.FC = () => {
     return (

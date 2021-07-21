@@ -1,5 +1,5 @@
 import { makeStyles, Theme } from "@material-ui/core";
-import { colors, textColors } from "../../_config/theme";
+import { colors, textColors } from "_config/theme";
 
 export interface ButtonStylesProps {
   variant?: "outlined" | "contained";

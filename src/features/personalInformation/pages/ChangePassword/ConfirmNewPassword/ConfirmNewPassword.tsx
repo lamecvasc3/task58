@@ -1,20 +1,22 @@
 import React from "react";
 import { Container } from "@material-ui/core";
-import { Close, KeyboardArrowRight } from "@material-ui/icons";
-import { ProcessDescriptionHeader } from "../../../../../components/ProcessDescriptionHeader";
-import { ProcessPageFooter } from "../../../../../components/ProcessPageFooter";
-import { AppBar } from "../../../../../components/AppBar";
-import { Button } from "../../../../../components/Button";
-import { PasswordInput } from "../../../components/inputs/PasswordInput";
-import { cancelLabel, nextLabel } from "../../../../../constants/buttons/labels";
+import { Close, KeyboardArrowRight } from '@material-ui/icons';
+import { ProcessDescriptionHeader } from "components/ProcessDescriptionHeader";
+import { ProcessPageFooter } from "components/ProcessPageFooter";
+import { AppBar } from "components/AppBar";
+import { Button } from "components/Button";
+import { PasswordInput } from "features/personalInformation/components/inputs/PasswordInput";
+import { cancelLabel, nextLabel } from "constants/buttons/labels";
 
-import { useStyle } from "../../../../../_assets/makeStyles/container/container.style";
-import "../../../../../_assets/css/forms/mainform.scss"
+import { useStyle } from "_assets/makeStyles/container/container.style";
+import "_assets/css/forms/mainform.scss"
+import { PopupOk } from "components/PopupOk/PopupOk";
 
 export const ConfirmNewPassword: React.FC = () => {
 
   const style = useStyle();
-  
+
+  const [showPopup, setShowPopup] = React.useState(false)
 
   const [passwordInput, setPasswordInput] = React.useState("");
 
@@ -27,8 +29,9 @@ export const ConfirmNewPassword: React.FC = () => {
   };
 
   const onNextButtonClick = () => {
-    console.log("Next")
+    setShowPopup(prev => !prev)
   };
+
 
   return (
     <Container maxWidth="xs" className={style.container}>
@@ -61,6 +64,7 @@ export const ConfirmNewPassword: React.FC = () => {
                 value={passwordInput}
               />
             </div>
+            <PopupOk showPopup={showPopup} setShowPopup={setShowPopup} />
           </div>
         </div>
         <ProcessPageFooter

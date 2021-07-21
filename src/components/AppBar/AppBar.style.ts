@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/core";
-import { theme } from "../../_config/theme"
+import { theme } from "_config/theme"
 
 const toolbarHeight = "8.5vh";
 

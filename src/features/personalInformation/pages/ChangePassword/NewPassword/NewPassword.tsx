@@ -1,19 +1,18 @@
 import React from "react";
 import { Container } from "@material-ui/core";
 import { Close, KeyboardArrowRight } from "@material-ui/icons";
-import { ProcessDescriptionHeader } from "../../../../../components/ProcessDescriptionHeader";
-import { ProcessPageFooter } from "../../../../../components/ProcessPageFooter";
-import { AppBar } from "../../../../../components/AppBar";
-import { Button } from "../../../../../components/Button";
-import { PasswordInput } from "../../../components/inputs/PasswordInput";
-import { cancelLabel, nextLabel } from "../../../../../constants/buttons/labels";
+import { ProcessDescriptionHeader } from "components/ProcessDescriptionHeader";
+import { ProcessPageFooter } from "components/ProcessPageFooter";
+import { AppBar } from "components/AppBar";
+import { Button } from "components/Button";
+import { PasswordInput } from "features/personalInformation/components/inputs/PasswordInput";
+import { cancelLabel, nextLabel } from "constants/buttons/labels";
 
-import { useStyle } from "../../../../../_assets/makeStyles/container/container.style";
-import "../../../../../_assets/css/forms/mainform.scss"
+import { useStyle } from "_assets/makeStyles/container/container.style";
+import "_assets/css/forms/mainform.scss"
 
-import { PersonalInformationRoutes } from "../../../constants/routes";
+import { PersonalInformationRoutes } from "features/personalInformation/constants/routes";
 import { useHistory } from "react-router-dom";
-
 
 
 export const NewPassword: React.FC = () => {
