@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "@material-ui/core";
-import { Close, KeyboardArrowRight } from '@material-ui/icons';
+import { KeyboardArrowRight } from '@material-ui/icons';
+import { CloseButton } from "features/personalInformation/components/CloseButton"
 import { ProcessDescriptionHeader } from "components/ProcessDescriptionHeader";
 import { ProcessPageFooter } from "components/ProcessPageFooter";
 import { AppBar } from "components/AppBar";
@@ -40,7 +41,7 @@ export const ConfirmNewPassword: React.FC = () => {
             <Button
               palette="secondary"
               size="small"
-              startIcon={<Close color="primary" />}
+              startIcon={<CloseButton/>}
               onClick={onCancelButtonClick}
             >
               {cancelLabel}
