@@ -32,7 +32,6 @@ export const ConfirmNewPassword: React.FC = () => {
     setShowPopup(prev => !prev)
   };
 
-
   return (
     <Container maxWidth="xs" className={style.container}>
       <div className="main-form">
