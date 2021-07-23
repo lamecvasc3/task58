@@ -3,7 +3,12 @@ import { makeStyles } from "@material-ui/core";
 export const useStyles = makeStyles({
   buttonsWrapper: {
     display: "flex",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
+    margin: "0 0 4vh 0",
+    bottom: 0,
+    position: "fixed",
+    width: "100%",
+    padding: "0 16px 0 16px",
 
     "& .MuiButton-root": {
       minWidth: 136,
@@ -31,3 +36,4 @@ export const useStyles = makeStyles({
     },
   },
 });
+
